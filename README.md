@@ -1,6 +1,6 @@
-# SocialNetwork App
 
-## Overview
+# SocialNetwork App                                   
+## <img src = "https://github.com/user-attachments/assets/9d50f6bc-37db-42fb-97fb-8916a54b26ee" width = "50">  Overview
 
 The **SocialNetwork** app is a simple social networking application that allows users to fetch posts, toggle their favorite status, and manage associated comments. This project uses **Realm** for local data storage and **RxSwift** for reactive programming.
 
@@ -47,8 +47,7 @@ Install dependencies: Ensure you have CocoaPods installed. Then run:
 ## Screenshots 
 
   ## Login Screen
-- <img src = "https://github.com/user-attachments/assets/ecef2795-01da-44fb-ad08-1bdfd69fa189" alt="App Screenshot" width="250">
-- <img src = "https://github.com/user-attachments/assets/82387253-7a29-48b6-b2dd-65d4281d5e23" alt="App Screenshot" width="250">
+ <img src = "https://github.com/user-attachments/assets/82387253-7a29-48b6-b2dd-65d4281d5e23" alt="App Screenshot" width="250">
 - <img src = "https://github.com/user-attachments/assets/2ac06f72-468e-4d77-83c4-f881786ca90c" alt="App Screenshot" width="250">
 
 
@@ -110,9 +109,9 @@ PostsViewModel
 PostsViewModel: Manages the fetching, storing, and updating of posts and their comments. Uses Realm for local data storage and RxSwift for managing asynchronous events.
 
 ## Key Methods:
-fetchPosts(): Fetches posts from the network and stores them in the local Realm database.
-toggleFavorite(post:): Toggles the favorite status of a post.
-fetchLocalPosts(): Retrieves posts from the local Realm database and updates the UI.
+- fetchPosts(): Fetches posts from the network and stores them in the local Realm database.
+- toggleFavorite(post:): Toggles the favorite status of a post.
+- fetchLocalPosts(): Retrieves posts from the local Realm database and updates the UI.
 
 ## Contributing:
 1. Fork the repository
