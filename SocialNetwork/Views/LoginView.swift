@@ -11,7 +11,7 @@ import RxCocoa
 
 struct LoginView: View {
     ///Environment variable to dismiss this sheet view
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.presentationMode) var presentationMode
     /// Observe the ViewModel
     @StateObject private var viewModel = LoginViewModel()
     /// SwiftUI state for button enabled state
@@ -38,7 +38,7 @@ struct LoginView: View {
                 
                 /// Login Button
                 Button(action: {
-                    dismiss()
+                    presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Login")
                         .frame(maxWidth: .infinity)
@@ -53,7 +53,6 @@ struct LoginView: View {
             .navigationTitle("Login")
         }
         .onAppear(perform: setupBindings)
-        .interactiveDismissDisabled(true) // Prevent dismissing by swiping down
     }
     
     /// Bind the ViewModel output to the SwiftUI state
